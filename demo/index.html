@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BPM Detective — Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BPM Detective — Demo</h1>
+    <p>Select an audio file (wav/mp3, etc.), then click <strong>Detect BPM</strong>.</p>
+    <input type="file" id="file" accept="audio/*">
+    <div class="controls">
+      <button id="detect" disabled>Detect BPM</button>
+      <button id="play" disabled>Play</button>
+    </div>
+    <div id="result" class="result">Waiting…</div>
+    <footer>Based on the project <a href="https://github.com/tornqvist/bpm-detective">bpm-detective</a></footer>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
