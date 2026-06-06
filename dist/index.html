@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPM Detective WebUI</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "bpm-detective": "./node_modules/bpm-detective/lib/index.js"
+            }
+        }
+    </script>
+  <script type="module" crossorigin src="./assets/index-BJ0gXObS.js"></script>
+</head>
+<body>
 
+    <h1>BPM Detective WebUI</h1>
+    <p>基于<a href="https://github.com/tornqvist/bpm-detective" target="_blank">tornqvist/bpm-detective</a>的Web界面</p>
+    <p>由Github Copilot生成</p>
+
+    <div>
+        <label for="audioFileInput">选择音频文件:</label>
+        <input type="file" id="audioFileInput" accept="audio/*">
+    </div>
+    <div>
+        <button id="detectBtn">检测 BPM</button>
+    </div>
+
+    <hr>
+
+    <h3>检测结果：</h3>
+    <p id="resultDisplay">等待检测...</p>
+    <p id="loadingStatus"></p>
+</body>
+</html>
